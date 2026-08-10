@@ -62,6 +62,72 @@ a {
   color: #004f9f;
 }
 
+.egg-link {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-weight: inherit;
+  padding: 0;
+}
+
+.egg-link:hover,
+.egg-link:focus-visible {
+  color: #004f9f;
+  text-decoration: underline;
+}
+
+.egg-modal {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 1.25rem;
+  position: fixed;
+  z-index: 10;
+}
+
+.egg-modal[hidden] {
+  display: none;
+}
+
+.egg-backdrop {
+  background: rgba(255, 255, 255, 0.86);
+  border: 0;
+  cursor: pointer;
+  inset: 0;
+  position: absolute;
+}
+
+.egg-frame {
+  background: #fff;
+  border: 1px solid #aaa;
+  max-width: min(720px, 92vw);
+  padding: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.egg-frame img {
+  display: block;
+  height: auto;
+  max-height: 78vh;
+  max-width: 100%;
+}
+
+.egg-close {
+  background: #fff;
+  border: 1px solid #aaa;
+  cursor: pointer;
+  font: inherit;
+  line-height: 1;
+  padding: 0.2rem 0.45rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
 footer {
   color: #333;
   font-size: 0.95rem;

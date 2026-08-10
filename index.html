@@ -75,7 +75,7 @@
           <strong>Intern, Insee</strong> (Jun 2025 - Aug 2025, Marseille).
         </li>
         <li>
-          <strong>Research Assistant, Ecole Normale Supérieure de Paris</strong>
+          <strong>Research Assistant, <button class="egg-link" type="button" data-egg-open>Ecole Normale Supérieure de Paris</button></strong>
           (Nov 2024 - May 2025).
           <br />
           under <a href="https://sites.google.com/site/ninaguyon/home?authuser=0">Nina Guyon</a>
@@ -143,5 +143,35 @@
         Last update May 2026
       </p>
     </footer>
+
+    <div class="egg-modal" data-egg-modal hidden>
+      <button class="egg-backdrop" type="button" data-egg-close aria-label="Close image"></button>
+      <div class="egg-frame" role="dialog" aria-modal="true" aria-label="Easter egg">
+        <button class="egg-close" type="button" data-egg-close aria-label="Close image">x</button>
+        <img src="assets/ens-easter-egg.jpg" alt="" />
+      </div>
+    </div>
+
+    <script>
+      const eggModal = document.querySelector("[data-egg-modal]");
+      const eggOpen = document.querySelector("[data-egg-open]");
+      const eggCloseButtons = document.querySelectorAll("[data-egg-close]");
+
+      eggOpen.addEventListener("click", () => {
+        eggModal.hidden = false;
+      });
+
+      eggCloseButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          eggModal.hidden = true;
+        });
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          eggModal.hidden = true;
+        }
+      });
+    </script>
   </body>
 </html>
