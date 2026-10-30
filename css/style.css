@@ -27,9 +27,9 @@ hr {
   border: 1px solid #bbb;
   border-radius: 50%;
   flex: 0 0 auto;
-  height: 132px;
+  height: 180px;
   object-fit: cover;
-  width: 132px;
+  width: 180px;
 }
 
 h1 {
@@ -81,7 +81,7 @@ footer {
   }
 
   .profile {
-    height: 104px;
-    width: 104px;
-  }
+  height: 140px;
+  width: 140px;
+}
 }
